@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(134, 78, 247);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.container{
+  max-width: 960px;
+  margin-right:auto;
+  margin-left:auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.notes-list{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+
+.note{
+  background-image: linear-gradient(to top, #27dae0 0%, #74f33d 100%);
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  white-space: pre-wrap;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+.note-footer{
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  justify-content: space-between;
+}
+
+textarea{
+  border:none;
+  resize: none;
+  background-image: linear-gradient(to top, #60e8ec 0%, #e6f052 100%);
+}
+
+.note.new{
+  background-color: rgb(108, 209, 143);
+}
+
+textarea:focus{
+  outline: none;
+}
+
+.save{
+  background-color: rgb(221, 239, 128);
+  border: none;
+  border-radius: 65px;
+  padding: 3.5px 20px 0.5px 20px;
+  border:solid 4px #1ba2ac8b;
+}
+
+.save:hover{
+  background-color: #59e681;
+  cursor: pointer;
+}
+
+.delete-icon{
+  cursor: pointer;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  background-color: linear-gradient(to top, #e2e756 0%, #d1f975 100%);
+  border-radius: 200px;
+  padding: 1.6em;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  border:solid 4px #5bf9f4;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.search input{
+  border: none;
+  background-color: linear-gradient(to top, #e0c427 0%, #b8e130 100%);
+  
+}
+
+.search input:focus{
+  outline: none;
+}
+
+.dark-mode{
+  background-color: rgb(108, 244, 181);
+  min-height: 100vh;
+}
+
+.dark-mode h1{
+  color: white;
+}
